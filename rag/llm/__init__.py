@@ -20,6 +20,7 @@ from .embedding_model import (
     LocalAIEmbed,
     OpenAIEmbed,
     AzureEmbed,
+    AutodeskEmbed,
     XinferenceEmbed,
     QWenEmbed,
     ZhipuEmbed,
@@ -50,6 +51,7 @@ from .embedding_model import (
 from .chat_model import (
     GptTurbo,
     AzureChat,
+    AutodeskChat,
     ZhipuChat,
     QWenChat,
     OllamaChat,
@@ -156,6 +158,7 @@ EmbeddingModel = {
     "LocalAI": LocalAIEmbed,
     "OpenAI": OpenAIEmbed,
     "Azure-OpenAI": AzureEmbed,
+    "Autodesk-OpenAI": AutodeskEmbed,
     "Xinference": XinferenceEmbed,
     "Tongyi-Qianwen": QWenEmbed,
     "ZHIPU-AI": ZhipuEmbed,
@@ -212,6 +215,7 @@ CvModel = {
 ChatModel = {
     "OpenAI": GptTurbo,
     "Azure-OpenAI": AzureChat,
+    "Autodesk-OpenAI": AutodeskChat,
     "ZHIPU-AI": ZhipuChat,
     "Tongyi-Qianwen": QWenChat,
     "Ollama": OllamaChat,
