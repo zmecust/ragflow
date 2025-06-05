@@ -992,19 +992,22 @@
                     "llm_name": "gpt-4o",
                     "tags": "LLM,CHAT,128K",
                     "max_tokens": 128000,
-                    "model_type": "chat"
+                    "model_type": "chat",
+                    "is_tools": true
                 },
                 {
                     "llm_name": "gpt-4.1",
                     "tags": "LLM,CHAT,128K",
                     "max_tokens": 128000,
-                    "model_type": "chat"
+                    "model_type": "chat",
+                    "is_tools": true
                 },
                 {
                     "llm_name": "gpt-4.1-mini",
                     "tags": "LLM,CHAT,128K",
                     "max_tokens": 128000,
-                    "model_type": "chat"
+                    "model_type": "chat",
+                    "is_tools": true
                 },
                 {
                     "llm_name": "text-embedding-ada-002",

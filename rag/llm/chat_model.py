@@ -267,6 +267,8 @@ class Base(ABC):
             response = self.client.chat.completions.create(model=self.model_name, messages=history, stream=True, tools=tools, **gen_conf)
             while not finish_completion:
                 for resp in response:
+                    if not resp.choices:
+                       continue
                     if resp.choices[0].delta.tool_calls:
                         for tool_call in resp.choices[0].delta.tool_calls or []:
                             index = tool_call.index
