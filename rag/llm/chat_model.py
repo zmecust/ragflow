@@ -284,6 +284,9 @@ class Base(ABC):
                     final_tool_calls = {}
                     answer = ""
                     for resp in response:
+                        if not resp.choices:
+                            continue
+
                         if resp.choices[0].delta.tool_calls:
                             for tool_call in resp.choices[0].delta.tool_calls or []:
                                 index = tool_call.index
